@@ -4,7 +4,7 @@
   "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration >
 
-	<classPathEntry location="/Users/moffatt/workspace/Mybatis_Generator/mysql-connector-java-5.1.30.jar"/>
+	<classPathEntry location="D:/workspace/Mybatis_Generator/mysql-connector-java-5.1.30.jar"/>
 
 	<context id="DB2Tables"	targetRuntime="MyBatis3">
 		<commentGenerator>
@@ -21,18 +21,18 @@
 		</javaTypeResolver>
 
 		<!-- 生成模型的包名和位置-->
-		<javaModelGenerator targetPackage="com.moffatt.web.entity" targetProject="Mybatis_Generator">
+		<javaModelGenerator targetPackage="com.moffatt.news.web.entity" targetProject="Mybatis_Generator">
 			<property name="enableSubPackages" value="true"/>
 			<property name="trimStrings" value="true"/>
 		</javaModelGenerator>
 
 		<!-- 生成映射文件的包名和位置-->
-		<sqlMapGenerator targetPackage="com.moffatt.web.entity" targetProject="Mybatis_Generator">
+		<sqlMapGenerator targetPackage="com.moffatt.news.web.entity" targetProject="Mybatis_Generator">
 			<property name="enableSubPackages" value="true"/>
 		</sqlMapGenerator>
 
 		<!-- 生成DAO的包名和位置-->
-		<javaClientGenerator type="XMLMAPPER" targetPackage="com.moffatt.web.mapper" targetProject="Mybatis_Generator">
+		<javaClientGenerator type="XMLMAPPER" targetPackage="com.moffatt.news.web.mapper" targetProject="Mybatis_Generator">
 			<property name="enableSubPackages" value="true"/>
 		</javaClientGenerator>
 		<!-- 要生成哪些表-->
