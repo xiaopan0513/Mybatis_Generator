@@ -14,33 +14,29 @@
 		</commentGenerator>
 
 		<!--数据库链接URL，用户名、密码 -->
-		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://rdsyvf3ii0q5sy1qr9u0public.mysql.rds.aliyuncs.com:3306/maywant" userId="lives" password="livesALL2015" />
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/news" userId="root" password="123456" />
 
 		<javaTypeResolver>
 			<property name="forceBigDecimals" value="true"/>
 		</javaTypeResolver>
 
 		<!-- 生成模型的包名和位置-->
-		<javaModelGenerator targetPackage="com.zefun.web.entity.bbs" targetProject="Mybatis_Generator">
+		<javaModelGenerator targetPackage="com.moffatt.web.entity" targetProject="Mybatis_Generator">
 			<property name="enableSubPackages" value="true"/>
 			<property name="trimStrings" value="true"/>
 		</javaModelGenerator>
 
 		<!-- 生成映射文件的包名和位置-->
-		<sqlMapGenerator targetPackage="com.zefun.web.entity.bbs" targetProject="Mybatis_Generator">
+		<sqlMapGenerator targetPackage="com.moffatt.web.entity" targetProject="Mybatis_Generator">
 			<property name="enableSubPackages" value="true"/>
 		</sqlMapGenerator>
 
 		<!-- 生成DAO的包名和位置-->
-		<javaClientGenerator type="XMLMAPPER" targetPackage="com.zefun.web.mapper.bbs" targetProject="Mybatis_Generator">
+		<javaClientGenerator type="XMLMAPPER" targetPackage="com.moffatt.web.mapper" targetProject="Mybatis_Generator">
 			<property name="enableSubPackages" value="true"/>
 		</javaClientGenerator>
 		<!-- 要生成哪些表-->
-	 	<table tableName="bbs_commend" domainObjectName="BbsCommend" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
-	 	<table tableName="bbs_comment" domainObjectName="BbsComment" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
-	 	<table tableName="bbs_record" domainObjectName="BbsRecord" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
-	 	<table tableName="bbs_setting" domainObjectName="BbsSetting" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
-	 	<table tableName="bbs_share" domainObjectName="BbsShare" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+	 	<table tableName="member_info" domainObjectName="MemberInfo" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
 
 	 </context>
 </generatorConfiguration>
